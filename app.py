@@ -10,6 +10,7 @@ def index():
 
 @app.route('/compute', methods=['POST'])
 def compute():
+    # Calcualte the simple interest using the formula: Interest = (P * R * T) / 100
     data = request.get_json() or {}
     try:
         P = float(data.get('principal', 0))
