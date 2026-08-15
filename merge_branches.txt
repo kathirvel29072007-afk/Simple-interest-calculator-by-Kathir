@@ -1,0 +1,34 @@
+MERGE BRANCHES TERMINAL OUTPUT
+==============================
+
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+$ git merge bug-fix-typo
+Updating 779681f..14e82ae
+Fast-forward
+ app.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+Complete log output:
+-------------------
+[bug-fix-typo 14e82ae] Fix typo: Calcualte -> Calculate
+ Committer: KATHIRVEL <kathirvel@KATHIRVELs-MacBook-Neo.local>
+ Your name and email address were configured automatically based
+ on your username and hostname.
+
+ 1 file changed, 1 insertion(+)
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Updating 779681f..14e82ae
+Fast-forward
+ app.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+KEY INDICATORS:
+✓ 1 file was changed (app.py)
+✓ Fast-forward merge successful
+✓ 1 insertion added
+✓ Merge completed without conflicts
