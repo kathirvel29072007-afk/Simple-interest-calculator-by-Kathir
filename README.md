@@ -42,3 +42,4 @@ Want changes? Tell me if you want different currency, a CLI variant, or packagin
 ## License
 
 This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
+# Enhanced Documentation
