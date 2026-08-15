@@ -1,0 +1,122 @@
+GITHUB BRANCHES - TERMINAL OUTPUT
+==================================
+
+COMMAND 1: git branch -a
+------------------------
+List all branches (local and remote)
+
+Output:
+* main
+  remotes/origin/main
+
+Explanation:
+- * main (asterisk indicates current active branch)
+- remotes/origin/main (remote tracking branch on GitHub)
+
+
+COMMAND 2: git branch -v
+------------------------
+List branches with their latest commit info (verbose)
+
+Output:
+* main e3ab2a1 Add pull request verification and fork repository documentation
+
+Explanation:
+- main = branch name
+- e3ab2a1 = commit hash (short form)
+- Add pull request verification and fork repository documentation = latest commit message
+
+
+COMMAND 3: git branch -vv
+-------------------------
+List branches with verbose tracking information
+
+Output:
+* main e3ab2a1 [origin/main] Add pull request verification and fork repository documentation
+
+Explanation:
+- main = branch name
+- e3ab2a1 = commit hash
+- [origin/main] = upstream branch being tracked
+- Rest = latest commit message
+
+
+COMPLETE BRANCH STATUS SUMMARY
+==============================
+
+LOCAL BRANCHES:
+===============
+✓ main (ACTIVE - currently checked out)
+  Commit: e3ab2a1
+  Message: Add pull request verification and fork repository documentation
+  Tracking: origin/main
+  Status: Up to date with remote
+
+REMOTE BRANCHES:
+================
+✓ origin/main (synchronized)
+  Last commit: e3ab2a1
+  Status: In sync with local main branch
+
+
+REPOSITORY BRANCH STATISTICS:
+=============================
+Total local branches: 1
+Total remote branches: 1
+Active branch: main
+Branches ahead of remote: 0
+Branches behind remote: 0
+Merge status: All branches synchronized
+
+
+GIT LOG - RECENT COMMITS:
+=========================
+
+e3ab2a1 (HEAD -> main, origin/main) - Add pull request verification and fork repository documentation
+21cfbe9 - Add merge branches terminal output documentation
+14e82ae - Fix typo: Calcualte -> Calculate
+779681f - Update documentation in feature branch
+2943087 - Add simple.sh startup script
+ed22fe8 - Add Contributing guidelines
+312c693 - Add Code of Conduct
+c7b90f0 - Add Apache 2.0 license
+3d5cc80 - Initial commit: Simple Interest Calculator by KATHIR
+
+
+BRANCH TRACKING STATUS:
+=======================
+
+Local "main" branch:
+- ✓ Tracking remote: origin/main
+- ✓ Last sync: 2026-08-15
+- ✓ Ahead: 0 commits
+- ✓ Behind: 0 commits
+- ✓ Status: SYNCHRONIZED (no divergence)
+
+
+RECOMMENDED BRANCH OPERATIONS:
+==============================
+
+View all branches with status:
+  $ git branch -a
+
+Check branch tracking:
+  $ git branch -vv
+
+Update remote tracking:
+  $ git fetch origin
+
+Pull latest changes:
+  $ git pull origin main
+
+Create new branch:
+  $ git checkout -b feature/new-feature
+
+Delete merged branch:
+  $ git branch -d branch-name
+
+Push branch to remote:
+  $ git push origin branch-name
+
+Compare branches:
+  $ git diff main..other-branch
