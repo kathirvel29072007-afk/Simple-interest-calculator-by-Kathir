@@ -38,6 +38,15 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
+  gap: 20px;
+}
+
+.top-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .brand-wrap {
@@ -76,7 +85,8 @@ h1 {
 }
 
 .badge,
-.plan-tag {
+.plan-tag,
+.signature {
   border: 1px solid var(--panel-border);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
@@ -84,6 +94,11 @@ h1 {
   padding: 10px 14px;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.signature {
+  background: linear-gradient(135deg, rgba(124, 155, 255, 0.18), rgba(153, 240, 216, 0.1));
+  letter-spacing: 0.1em;
 }
 
 .dashboard {
@@ -293,6 +308,16 @@ button:hover {
 .milestone-item span {
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.footer-signature {
+  text-align: center;
+  margin-top: 26px;
+  padding: 16px 18px 8px;
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 @media (max-width: 860px) {
