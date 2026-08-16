@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth Lens | Simple Interest Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">G</div>
+          <div>
+            <p class="eyebrow">Smart Wealth Model</p>
+            <h1>Growth Lens</h1>
+          </div>
+        </div>
+        <div class="badge">Simple Interest</div>
+      </header>
+
+      <main class="dashboard">
+        <section class="panel input-panel">
+          <div class="section-head">
+            <p class="eyebrow">Plan your earnings</p>
+            <h2>Investment Summary</h2>
+          </div>
+
+          <form id="interest-form">
+            <div class="field-row">
+              <label for="principal">Principal Amount</label>
+              <div class="input-block">
+                <span class="currency">₹</span>
+                <input id="principal" name="principal" type="number" min="0" step="0.01" value="250000" required />
+              </div>
+            </div>
+
+            <div class="field-row two-col">
+              <div>
+                <label for="rate">Annual Rate (%)</label>
+                <input id="rate" name="rate" type="number" min="0" step="0.01" value="8.5" required />
+              </div>
+              <div>
+                <label for="time">Time (Years)</label>
+                <input id="time" name="time" type="number" min="0" step="0.1" value="5" required />
+              </div>
+            </div>
+
+            <div class="field-row two-col">
+              <div>
+                <label for="inflation">Inflation Rate (%)</label>
+                <input id="inflation" name="inflation" type="number" min="0" step="0.1" value="4.2" />
+              </div>
+              <div>
+                <label for="plan">Growth Mode</label>
+                <select id="plan" name="plan">
+                  <option value="steady">Steady Builder</option>
+                  <option value="aggressive">Growth Booster</option>
+                  <option value="balanced">Balanced Path</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button type="submit" class="primary-btn">Calculate</button>
+              <button type="button" class="secondary-btn" id="reset-btn">Reset</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel results-panel">
+          <div class="result-hero">
+            <div>
+              <p class="eyebrow">Projected outcome</p>
+              <h2 id="wealth-score">Wealth Score: 0</h2>
+            </div>
+            <span id="plan-tag" class="plan-tag">Steady Builder</span>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card accent">
+              <span class="label">Interest Earned</span>
+              <strong id="interest-earned">₹0.00</strong>
+            </article>
+            <article class="stat-card">
+              <span class="label">Final Value</span>
+              <strong id="final-amount">₹0.00</strong>
+            </article>
+            <article class="stat-card">
+              <span class="label">Monthly Gain</span>
+              <strong id="monthly-gain">₹0.00</strong>
+            </article>
+            <article class="stat-card">
+              <span class="label">Real Value</span>
+              <strong id="real-value">₹0.00</strong>
+            </article>
+          </div>
+
+          <div class="insight-box">
+            <h3>Growth Insight</h3>
+            <p id="insight-text">Enter your values to generate a fresh growth forecast.</p>
+          </div>
+
+          <div class="milestones">
+            <h3>Milestone Forecast</h3>
+            <div class="milestone-grid">
+              <div class="milestone-item">
+                <span>1 Year</span>
+                <strong id="year-1">₹0.00</strong>
+              </div>
+              <div class="milestone-item">
+                <span>3 Years</span>
+                <strong id="year-3">₹0.00</strong>
+              </div>
+              <div class="milestone-item">
+                <span>5 Years</span>
+                <strong id="year-5">₹0.00</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

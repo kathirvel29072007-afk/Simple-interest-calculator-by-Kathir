@@ -1,45 +1,47 @@
-# Neon Simple Interest Calculator
+# Growth Lens
 
-This is a small, single-file web app that calculates simple interest and shows a neon glass UI.
+A sleek, GitHub-friendly simple interest calculator built as a small web app. The project uses the "Growth Lens" model to show not just interest earned, but also how the investment performs across milestones and during inflation-adjusted real value scenarios.
 
-Files created:
+## Features
 
-- index.html — UI and markup
-- styles.css — modern neon glass styles and responsive layout
-- script.js — calculator logic and interactivity
-- app.py — Flask server
-- requirements.txt — Python dependencies
+- Simple interest calculation with principal, rate, time, and inflation inputs
+- Modern dashboard layout with a polished finance UI
+- Growth score and model-based planning tags
+- Projected milestone values for 1, 3, and 5 years
+- Responsive design for desktop and mobile screens
+- Easy to deploy as a static GitHub Pages project
 
-How to run:
+## Formula Used
 
-1. Create a virtual environment and activate it (optional but recommended):
+Simple Interest = (P × R × T) / 100
+
+Final Amount = P + Simple Interest
+
+## Run Locally
+
+Open the project folder and start a local server:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+cd /Users/kathirvel/Desktop/simple-interest-calculator
+python3 -m http.server 8000
 ```
 
-2. Install dependencies and run:
+Then visit:
 
-```bash
-pip install -r requirements.txt
-python app.py
+```text
+http://localhost:8000
 ```
 
-3. Open http://127.0.0.1:5000 in your browser.
+## Project Structure
 
-Features:
+- `index.html` – App layout and HTML structure
+- `styles.css` – Dashboard styling and responsive design
+- `script.js` – Calculation logic and interactive features
 
-- Live-sync sliders and numeric inputs
-- Animated gradient background and glassy card
-- Server-side compute endpoint (`/compute`) with locale-aware formatting
-- Annual breakdown list and CSV export
-- Copy result button
-- Client-side validation with helpful message
+## GitHub Project Idea
 
-Want changes? Tell me if you want different currency, a CLI variant, or packaging as a desktop app.
+This project is ready to be pushed to GitHub as a small open-source finance utility or portfolio project. It is intentionally lightweight, easy to understand, and styled to look more premium than a basic calculator.
 
 ## License
 
-This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
-# Enhanced Documentation
+MIT
